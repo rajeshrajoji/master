@@ -26,16 +26,12 @@ import com.sample.repository.IUserRepository;
 @ComponentScan(basePackages = { "com.sample" })
 @EnableTransactionManagement
 @ImportResource("context.xml")
-//@EnableAutoConfiguration
 @EnableAspectJAutoProxy(proxyTargetClass = true)
-//@EnableCaching
 @Transactional
 public class Application implements CommandLineRunner{
 	
 	@Autowired
 	IUserRepository userRepository;
-	
-	//private PasswordEncoder passwordEncoder;
 	
 	@Bean
 	public PasswordEncoder passwordEncoder() {
@@ -52,7 +48,7 @@ public class Application implements CommandLineRunner{
 		userRepository.save(user);
 		
 	}
-	
+	/*
 	@Bean
 	 public FilterRegistrationBean securityFilterChainRegistration() {
 	 DelegatingFilterProxy delegatingFilterProxy = new DelegatingFilterProxy();
@@ -61,7 +57,7 @@ public class Application implements CommandLineRunner{
 	 registrationBean.setName(AbstractSecurityWebApplicationInitializer.DEFAULT_FILTER_NAME);
 	 registrationBean.addUrlPatterns("/*");
 	 return registrationBean;
-	 }
+	 }*/
 
 
 }
