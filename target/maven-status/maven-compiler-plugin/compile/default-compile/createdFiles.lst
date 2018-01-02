@@ -1,0 +1,10 @@
+com\sample\controller\POCURIConstants.class
+com\sample\model\ReportDetails.class
+com\sample\model\TransactionRecord.class
+com\sample\service\ILoginService.class
+com\sample\model\UserDetails.class
+com\sample\repository\IReportDetailsRepository.class
+com\sample\service\LoginService.class
+com\sample\controller\LoginController.class
+com\sample\repository\ILoginRepository.class
+com\sample\Application.class
